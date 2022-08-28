@@ -12,8 +12,8 @@
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
+  --h1-font-size: 1.7rem;
+  --h2-font-size: 1.2rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
@@ -103,15 +103,16 @@ button {
 .top-title {
   font-weight: 700;
   color: var(--primary-color);
+  font-size: var(--h2-font-size);
 }
 .title {
   font-size: var(--h1-font-size);
 }
 .paragraph {
   color: var(--body-color);
-  line-height: 1.8;
-  margin: 0.8rem 0;
-  font-weight: 300;
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-weight: 400;
 }
 .primary-btn {
   padding: 0.6rem 1.5rem;
@@ -123,6 +124,26 @@ button {
 }
 .primary-btn:hover {
   background: var(--title-color);
+}
+.secondery-btn {
+  position: relative;
+  letter-spacing: 0.5px;
+  background: transparent;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.secondery-btn::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: 0;
+  transition: width 0.2s ease-in-out;
+}
+.secondery-btn:hover::before {
+  width: 100%;
 }
 .img {
   margin-bottom: 2rem;
@@ -137,6 +158,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 /*=============== HEADER ===============*/
 .header {
