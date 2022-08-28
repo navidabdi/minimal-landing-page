@@ -285,6 +285,60 @@ nav.mobile ul li:hover a {
 /*=============== Features ===============*/
 
 /*=============== Team Members ===============*/
+.team-container {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+.team-member img {
+  width: 100%;
+  display: block;
+}
+.team-member h4 {
+  font-size: var(--h2-font-size);
+}
+.team-member p {
+  font-size: 1rem;
+}
+.team-member .socials i {
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  transition: transform 0.2s ease-in-out;
+}
+.team-member .socials i:hover {
+  transform: translateY(-10px);
+}
+.team-member-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.team-member .socials-container {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.team-member .socials {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+.team-member-img:hover .socials-container {
+  opacity: 1;
+  pointer-events: auto;
+}
+.team-member-img:hover .socials {
+  top: 50%;
+}
 
 /*=============== Latest News ===============*/
 
