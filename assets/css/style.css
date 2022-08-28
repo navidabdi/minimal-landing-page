@@ -67,7 +67,6 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   overflow-x: hidden;
-  min-height: 2000px;
 }
 h1,
 h2,
@@ -101,11 +100,43 @@ button {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-
+.top-title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.title {
+  font-size: var(--h1-font-size);
+}
+.paragraph {
+  color: var(--body-color);
+  line-height: 1.8;
+  margin: 0.8rem 0;
+  font-weight: 300;
+}
+.primary-btn {
+  padding: 0.6rem 1.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  letter-spacing: 0.5px;
+  border-radius: 100px;
+  transition: background 0.2s ease-in-out;
+}
+.primary-btn:hover {
+  background: var(--title-color);
+}
+.img {
+  margin-bottom: 2rem;
+}
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 93%;
   margin: auto;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /*=============== HEADER ===============*/
 .header {
@@ -129,6 +160,7 @@ button {
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 #menu-mobile-container.active .dark-part {
   opacity: 1;
