@@ -5,12 +5,10 @@
 :root {
   /*========== Colors ==========*/
   --primary-color: #6960fc;
-  --primary-color-2: #ffc735;
-  --primary-color-bg: #f9f8f4;
-  --secondary-color: #b4d51e;
-  --secondary-color-2: #463c74;
-  --title-color: var(--secondary-color-2);
-  --text-color: #463c7480;
+  --secondary-color: #f0f6fb;
+  --primary-color-bg: #fff;
+  --title-color: #222222;
+  --text-color: #666666;
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
@@ -69,6 +67,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   overflow-x: hidden;
+  min-height: 2000px;
 }
 h1,
 h2,
@@ -104,11 +103,63 @@ button {
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 /*=============== LAYOUT ===============*/
-
+.container {
+  max-width: 93%;
+  margin: auto;
+}
 /*=============== HEADER ===============*/
-
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.logo {
+  max-width: 90px;
+}
 /*=============== NAV ===============*/
-
+#menu-mobile-container .dark-part {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+}
+#menu-mobile-container.active .dark-part {
+  opacity: 1;
+  pointer-events: auto;
+}
+nav.mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: var(--primary-color-bg);
+  min-width: 300px;
+  box-shadow: var(--shadow-1);
+  padding: 2rem 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+#menu-mobile-container.active nav.mobile {
+  transform: translateX(0);
+}
+nav.mobile ul li a {
+  padding: 0.8rem 2rem;
+  display: block;
+  color: var(--title-color);
+  transition: all 0.2s ease-in-out;
+  font-size: var(--h3-font-size);
+  letter-spacing: 1px;
+}
+nav.mobile ul li:hover a {
+  background: var(--primary-color);
+  color: #fff;
+}
 /*=============== Hero ===============*/
 
 /*=============== About ===============*/
