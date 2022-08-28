@@ -196,6 +196,10 @@ button {
   background: var(--secondary-color);
   padding: 2rem 0;
 }
+.text-center {
+  text-align: center;
+  margin: 1.5rem;
+}
 /*=============== HEADER ===============*/
 .header {
   display: flex;
@@ -255,7 +259,29 @@ nav.mobile ul li:hover a {
 /*=============== About ===============*/
 
 /*=============== Products ===============*/
-
+.product-box-container {
+  display: grid;
+  gap: 2rem;
+}
+.product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-1);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 3px solid var(--primary-color);
+}
+.product-box * {
+  margin: 1.3rem 0;
+}
+.product-box-title {
+  font-size: var(--h2-font-size);
+}
+.product-box p {
+  text-align: center;
+}
 /*=============== Features ===============*/
 
 /*=============== Team Members ===============*/
