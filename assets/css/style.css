@@ -400,7 +400,7 @@ nav.mobile ul li:hover a {
 
 /*=============== Partners ===============*/
 .partners-container {
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
@@ -413,7 +413,39 @@ nav.mobile ul li:hover a {
   align-self: center;
 }
 /*=============== Blog ===============*/
-
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+article.blog {
+  position: relative;
+  background: #fff;
+  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+article.blog .blog-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+article.blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+article.blog:hover .blog-img img {
+  transform: scale(1.2);
+}
+.blog-des {
+  padding: 1.5rem 2rem;
+}
+article.blog a {
+  position: absolute;
+  inset: 0;
+}
 /*=============== Contact ===============*/
 
 /*=============== Footer ===============*/
