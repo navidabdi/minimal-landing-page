@@ -469,10 +469,10 @@ form.contact {
 }
 
 /*=============== Footer ===============*/
-footer > * {
+.top-footer > * {
   margin-bottom: 3rem;
 }
-footer .title {
+.top-footer .title {
   font-size: 1.3rem;
 }
 .address ul {
@@ -534,4 +534,26 @@ footer .title {
   font-size: 2rem;
   color: var(--primary-color);
   line-height: 0;
+}
+
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.copyright a {
+  color: var(--primary-color);
+}
+.foot-socials {
+  display: flex;
+  align-items: center;
+}
+.foot-socials a {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--body-color);
+}
+.foot-socials a:hover {
+  color: var(--primary-color);
 }
