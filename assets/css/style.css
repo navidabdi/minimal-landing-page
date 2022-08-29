@@ -89,7 +89,8 @@ img {
 }
 
 button,
-input {
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -447,5 +448,24 @@ article.blog a {
   inset: 0;
 }
 /*=============== Contact ===============*/
+form.contact {
+  width: 100%;
+}
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.input-container input,
+.contact textarea {
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+.contact textarea {
+  margin-bottom: 1rem;
+}
 
 /*=============== Footer ===============*/
