@@ -472,6 +472,9 @@ form.contact {
 footer > * {
   margin-bottom: 3rem;
 }
+footer .title {
+  font-size: 1.3rem;
+}
 .address ul {
   margin-top: 1.5rem;
 }
@@ -506,4 +509,29 @@ footer > * {
 }
 .link ul li:hover a {
   color: var(--primary-color);
+}
+.newsletter p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.newsletter-input {
+  width: 100%;
+  display: flex;
+  background: var(--secondary-color);
+  height: 60px;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 3px;
+  margin-top: 1.5rem;
+}
+.newsletter-input input {
+  width: 100%;
+  background: transparent;
+  font-size: 1.05rem;
+}
+.newsletter-input button {
+  background: transparent;
+  font-size: 2rem;
+  color: var(--primary-color);
+  line-height: 0;
 }
