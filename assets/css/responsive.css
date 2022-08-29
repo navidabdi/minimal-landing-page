@@ -19,6 +19,12 @@
   .width-75 {
     width: 75%;
   }
+  .desktop-hidden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
+  }
   .icon-box-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -102,5 +108,19 @@
   }
   .copyright {
     margin-right: 2rem;
+  }
+  /*=============== Nav ===============*/
+  .desktop-menu ul {
+    display: flex;
+  }
+  .desktop-menu ul li {
+    padding: 0.2rem 1rem;
+  }
+  .desktop-menu ul li a {
+    color: var(--title-color);
+    font-size: 1.08rem;
+  }
+  .desktop-menu ul li:hover a {
+    color: var(--primary-color);
   }
 }

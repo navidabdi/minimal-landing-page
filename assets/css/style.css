@@ -102,6 +102,9 @@ button {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.mobile-hidden {
+  display: none;
+}
 .top-title {
   font-weight: 700;
   color: var(--primary-color);
@@ -220,7 +223,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 .menu-icon {
   font-size: 2rem;
