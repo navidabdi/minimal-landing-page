@@ -40,6 +40,16 @@ pervBtn.addEventListener("click", () => {
   }
 });
 
+let gotoup = document.getElementById("gotoup");
+(window.onscroll = function () {
+  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+    ? gotoup.classList.add("active")
+    : gotoup.classList.remove("active");
+}),
+  gotoup.addEventListener("click", () => {
+    (document.body.scrollTop = 0), (document.documentElement.scrollTop = 0);
+  });
+
 /*===== GSAP ANIMATION =====*/
 // NAV
 

@@ -477,6 +477,7 @@ form.contact {
   padding: 1rem 1.2rem;
   font-size: 1.1rem;
   border-radius: 3px;
+  font-weight: 300;
 }
 .contact textarea {
   margin-bottom: 1rem;
@@ -570,4 +571,30 @@ form.contact {
 }
 .foot-socials a:hover {
   color: var(--primary-color);
+}
+/*=============== Go to top button ===============*/
+#gotoup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--primary-color);
+  width: 45px;
+  height: 45px;
+  font-size: 1.7rem;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  color: #ffffff;
+  border-radius: 16px;
+  cursor: pointer;
+  transform: translateY(150%);
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 9999;
+}
+#gotoup.active {
+  transform: translateY(0);
+  pointer-events: auto;
 }

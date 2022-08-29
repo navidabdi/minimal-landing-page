@@ -1,5 +1,8 @@
 @media screen and (min-width: 992px) {
   /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 85%;
+  }
   .section {
     margin-bottom: 4rem;
   }
