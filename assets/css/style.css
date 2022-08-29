@@ -469,3 +469,20 @@ form.contact {
 }
 
 /*=============== Footer ===============*/
+.address ul {
+  margin-top: 1.5rem;
+}
+.address ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.address ul li i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  font-size: 1.6rem;
+}
+.address ul li p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
