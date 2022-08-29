@@ -217,7 +217,7 @@ button {
   color: var(--primary-color);
 }
 .logo {
-  max-width: 90px;
+  max-width: 80px;
 }
 /*=============== NAV ===============*/
 #menu-mobile-container .dark-part {
@@ -399,7 +399,19 @@ nav.mobile ul li:hover a {
 }
 
 /*=============== Partners ===============*/
-
+.partners-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  justify-items: center;
+}
+.partners-container img {
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+  align-self: center;
+}
 /*=============== Blog ===============*/
 
 /*=============== Contact ===============*/
