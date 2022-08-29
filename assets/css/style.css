@@ -200,6 +200,10 @@ button {
   text-align: center;
   margin: 1.5rem;
 }
+.text-left {
+  text-align: left;
+  margin: 1.5rem 0;
+}
 /*=============== HEADER ===============*/
 .header {
   display: flex;
@@ -223,6 +227,7 @@ button {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
+  z-index: 1;
 }
 #menu-mobile-container.active .dark-part {
   opacity: 1;
@@ -238,6 +243,8 @@ nav.mobile {
   padding: 2rem 0;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+  background: #fff;
+  z-index: 2;
 }
 #menu-mobile-container.active nav.mobile {
   transform: translateX(0);
@@ -301,7 +308,7 @@ nav.mobile ul li:hover a {
   font-size: 1rem;
 }
 .team-member .socials i {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   background-color: var(--primary-color);
   color: #fff;
   padding: 0.5rem;
@@ -341,6 +348,55 @@ nav.mobile ul li:hover a {
 }
 
 /*=============== Latest News ===============*/
+.testimonial-carousel {
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-bottom: 6rem;
+  overflow: hidden;
+}
+.testimonial-item {
+  flex: 1 0 100%;
+  text-align: center;
+  padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.testimonial-text {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+.testimonial-user h5 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--title-color);
+}
+.testimonial-carousel .next,
+.testimonial-carousel .perv {
+  position: absolute;
+  bottom: 25px;
+  left: 40%;
+  transform: translateX(-50%);
+  font-size: 2.2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-1);
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.testimonial-carousel .next:hover,
+.testimonial-carousel .perv:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+.testimonial-carousel .next {
+  left: 60%;
+}
 
 /*=============== Partners ===============*/
 
