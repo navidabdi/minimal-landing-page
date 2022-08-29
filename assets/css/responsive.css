@@ -1,29 +1,106 @@
 @media screen and (min-width: 992px) {
   /*=============== REUSABLE CSS CLASSES ===============*/
+  .section {
+    margin-bottom: 4rem;
+  }
+  .flex-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .flex-start {
+    align-items: flex-start;
+  }
+  .width-50 {
+    width: 50%;
+  }
+  .width-75 {
+    width: 75%;
+  }
+  .icon-box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-center {
+    text-align: center;
+  }
+  .product-box-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
+  }
+  .team-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-  /*=============== LAYOUT ===============*/
+  .latest-news {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 10rem;
+  }
+  .latest-news > * {
+    flex: 1;
+  }
+  .latest-news .text-center {
+    text-align: left;
+  }
 
-  /*=============== HEADER ===============*/
+  .partners-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+  .partners-container img {
+    width: 100%;
+  }
+  .partners .text-left {
+    text-align: center;
+  }
+  .partners .paragraph {
+    margin: auto;
+  }
+  .blog .text-left {
+    text-align: center;
+  }
+  .blog .paragraph {
+    margin: auto;
+  }
+  .blog-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .blog-des {
+    padding: 2.5rem;
+  }
 
-  /*=============== NAV ===============*/
+  .contact {
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+  .contact > * {
+    flex: 1;
+  }
 
-  /*=============== Hero ===============*/
+  .input-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  /*=============== About ===============*/
-
-  /*=============== Products ===============*/
-
-  /*=============== Features ===============*/
-
-  /*=============== Team Members ===============*/
-
-  /*=============== Latest News ===============*/
-
-  /*=============== Partners ===============*/
-
-  /*=============== Blog ===============*/
-
-  /*=============== Contact ===============*/
-
-  /*=============== Footer ===============*/
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 8rem;
+  }
+  .top-footer > * {
+    flex: 1;
+  }
+  .links {
+    justify-content: space-evenly;
+  }
+  .bottom-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .copyright {
+    margin-right: 2rem;
+  }
 }

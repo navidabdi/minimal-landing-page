@@ -93,6 +93,7 @@ input,
 textarea {
   border: none;
   outline: none;
+  font-family: var(--body-font);
 }
 button {
   cursor: pointer;
@@ -149,6 +150,10 @@ button {
 .img {
   margin-bottom: 2rem;
 }
+.icon-box-container {
+  display: grid;
+  gap: 1.5rem;
+}
 .icon-box {
   margin: 2.5rem 0;
   display: flex;
@@ -191,7 +196,12 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   margin-bottom: 5rem;
+}
+.section .img,
+.section .description {
+  flex: 1;
 }
 .bg-section {
   background: var(--secondary-color);
@@ -406,6 +416,7 @@ nav.mobile ul li:hover a {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   justify-items: center;
+  align-items: center;
 }
 .partners-container img {
   width: 150px;
