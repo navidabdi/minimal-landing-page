@@ -469,6 +469,9 @@ form.contact {
 }
 
 /*=============== Footer ===============*/
+footer > * {
+  margin-bottom: 3rem;
+}
 .address ul {
   margin-top: 1.5rem;
 }
@@ -485,4 +488,22 @@ form.contact {
 .address ul li p {
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links .link .title {
+  margin-bottom: 0.8rem;
+}
+.link ul li a {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding: 0.4rem 0;
+  display: block;
+}
+.link ul li:hover a {
+  color: var(--primary-color);
 }
