@@ -28,12 +28,12 @@
         /></a>
         <nav class="desktop-menu mobile-hidden">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home_section">Home</a></li>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#products_section">products</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#blog_section">Blog</a></li>
+            <li><a href="#contact_section">Contact</a></li>
           </ul>
         </nav>
         <div id="trigger-menu" class="menu-icon desktop-hidden">
@@ -47,12 +47,12 @@
       <div class="dark-part"></div>
       <nav id="mobile-menu" class="menu mobile">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">products</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home_section">Home</a></li>
+          <li><a href="#about_section">About</a></li>
+          <li><a href="#products_section">products</a></li>
+          <li><a href="#team_section">Team</a></li>
+          <li><a href="#blog_section">Blog</a></li>
+          <li><a href="#contact_section">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -61,7 +61,10 @@
 
     <main>
       <!--==================== Hero ====================-->
-      <section class="section flex-desktop flex-row-reverse container">
+      <section
+        id="home_section"
+        class="section flex-desktop flex-row-reverse container"
+      >
         <div class="img">
           <img src="assets/img/slider-img.png" alt="hero image" />
         </div>
@@ -78,8 +81,8 @@
 
       <!--==================== About ====================-->
 
-      <section class="section flex-desktop container">
-        <div class="img">
+      <section id="about_section" class="section flex-desktop container">
+        <div class="img img-center">
           <img src="assets/img/about-img.png" alt="about image" />
         </div>
         <div class="description">
@@ -101,7 +104,10 @@
       </section>
 
       <!--==================== service ====================-->
-      <section class="section flex-desktop flex-row-reverse container">
+      <section
+        id="why_us"
+        class="section flex-desktop flex-row-reverse container"
+      >
         <div class="img img-center">
           <img src="assets/img/service-img.png" alt="service image" />
         </div>
@@ -163,7 +169,7 @@
         </section>
       </div>
       <!--==================== Products ====================-->
-      <section class="section container">
+      <section id="products_section" class="section container">
         <div class="text-center">
           <p class="top-title">Our Product</p>
           <h2 class="title">We Develope Amazing Products</h2>
@@ -261,76 +267,6 @@
         </div>
       </section>
 
-      <!--==================== Team Members ====================-->
-      <section class="section flex-start container">
-        <div class="text-left">
-          <p class="top-title">Team Members</p>
-          <h2 class="title">Amazing Team</h2>
-          <p class="paragraph width-50">
-            Phasellus seiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam
-          </p>
-        </div>
-        <div class="team-container">
-          <div class="team-member">
-            <div class="team-member-img">
-              <img src="assets/img/team-img1.jpeg" alt="" />
-              <div class="socials-container">
-                <div class="socials">
-                  <i class="bx bxl-facebook-square"></i>
-                  <i class="bx bxl-linkedin-square"></i>
-                  <i class="bx bxl-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <h4>Johnson Doe</h4>
-            <p>Senior Attorney</p>
-          </div>
-          <div class="team-member">
-            <div class="team-member-img">
-              <img src="assets/img/team-img2.jpeg" alt="" />
-              <div class="socials-container">
-                <div class="socials">
-                  <i class="bx bxl-facebook-square"></i>
-                  <i class="bx bxl-linkedin-square"></i>
-                  <i class="bx bxl-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <h4>Johnson Doe</h4>
-            <p>Senior Attorney</p>
-          </div>
-          <div class="team-member">
-            <div class="team-member-img">
-              <img src="assets/img/team-img3.jpeg" alt="" />
-              <div class="socials-container">
-                <div class="socials">
-                  <i class="bx bxl-facebook-square"></i>
-                  <i class="bx bxl-linkedin-square"></i>
-                  <i class="bx bxl-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <h4>Johnson Doe</h4>
-            <p>Senior Attorney</p>
-          </div>
-          <div class="team-member">
-            <div class="team-member-img">
-              <img src="assets/img/team-img4.jpeg" alt="" />
-              <div class="socials-container">
-                <div class="socials">
-                  <i class="bx bxl-facebook-square"></i>
-                  <i class="bx bxl-linkedin-square"></i>
-                  <i class="bx bxl-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <h4>Johnson Doe</h4>
-            <p>Senior Attorney</p>
-          </div>
-        </div>
-      </section>
-
       <!--==================== Latest News ====================-->
       <div class="bg-section">
         <section class="section container latest-news">
@@ -425,6 +361,76 @@
           </div>
         </section>
       </div>
+
+      <!--==================== Team Members ====================-->
+      <section id="team_section" class="section flex-start container">
+        <div class="text-left">
+          <p class="top-title">Team Members</p>
+          <h2 class="title">Amazing Team</h2>
+          <p class="paragraph width-50">
+            Phasellus seiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam
+          </p>
+        </div>
+        <div class="team-container">
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="assets/img/team-img1.jpeg" alt="" />
+              <div class="socials-container">
+                <div class="socials">
+                  <i class="bx bxl-facebook-square"></i>
+                  <i class="bx bxl-linkedin-square"></i>
+                  <i class="bx bxl-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <h4>Johnson Doe</h4>
+            <p>Senior Attorney</p>
+          </div>
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="assets/img/team-img2.jpeg" alt="" />
+              <div class="socials-container">
+                <div class="socials">
+                  <i class="bx bxl-facebook-square"></i>
+                  <i class="bx bxl-linkedin-square"></i>
+                  <i class="bx bxl-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <h4>Johnson Doe</h4>
+            <p>Senior Attorney</p>
+          </div>
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="assets/img/team-img3.jpeg" alt="" />
+              <div class="socials-container">
+                <div class="socials">
+                  <i class="bx bxl-facebook-square"></i>
+                  <i class="bx bxl-linkedin-square"></i>
+                  <i class="bx bxl-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <h4>Johnson Doe</h4>
+            <p>Senior Attorney</p>
+          </div>
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="assets/img/team-img4.jpeg" alt="" />
+              <div class="socials-container">
+                <div class="socials">
+                  <i class="bx bxl-facebook-square"></i>
+                  <i class="bx bxl-linkedin-square"></i>
+                  <i class="bx bxl-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <h4>Johnson Doe</h4>
+            <p>Senior Attorney</p>
+          </div>
+        </div>
+      </section>
       <!--==================== Partners ====================-->
       <section class="section partners container">
         <div class="text-left">
@@ -447,9 +453,8 @@
           <img src="assets/img/brand-img9.png" alt="" />
         </div>
       </section>
-
       <!--==================== Blog ====================-->
-      <div class="bg-section">
+      <div id="blog_section" class="bg-section">
         <section class="section blog container">
           <div class="text-left">
             <p class="top-title">Latest News</p>
@@ -500,7 +505,7 @@
         </section>
       </div>
       <!--==================== Contact ====================-->
-      <section class="section contact container">
+      <section id="contact_section" class="section contact container">
         <div class="text-left">
           <p class="top-title">Contact Us</p>
           <h2 class="title">Stay Connected</h2>

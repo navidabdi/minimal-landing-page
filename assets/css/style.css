@@ -352,6 +352,7 @@ nav.mobile ul li:hover a {
   top: 70%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
+  display: flex;
 }
 .team-member-img:hover .socials-container {
   opacity: 1;
