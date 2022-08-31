@@ -599,3 +599,19 @@ form.contact {
   transform: translateY(0);
   pointer-events: auto;
 }
+
+.pop-animation {
+  animation: pop 5s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

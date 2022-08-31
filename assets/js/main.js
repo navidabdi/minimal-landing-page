@@ -52,7 +52,31 @@ let gotoup = document.getElementById("gotoup");
 
 /*===== GSAP ANIMATION =====*/
 // NAV
+gsap.from(".logo", {
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  y: 10,
+});
+gsap.from(".menu-icon", {
+  opacity: 0,
+  duration: 1,
+  delay: 0.7,
+  y: 10,
+});
+gsap.from(".desktop-menu ul li", {
+  opacity: 0,
+  duration: 1,
+  delay: 0.6,
+  y: 30,
+  stagger: 0.2,
+});
 
-// Hero
-
-// About
+// sections
+gsap.from(".section > *", {
+  opacity: 0,
+  duration: 0.7,
+  delay: 1,
+  y: 30,
+  stagger: 0.2,
+});
